@@ -1,0 +1,53 @@
+<!-- DOCTYPE 이건 HTML문서임을 알리는 문장임 / 웹브라우저에게 이 문서가 HTML이라고 알려주는 거 필수-->
+<!DOCTYPE html>
+
+<!-- <html>태그는 문서의 시작과 끝을 나타낸다 > -->
+<html lang="ko">
+
+<!-- head태그는 html 문서에 대한 기본 정보를 포함하는 영역 여기서 문서의 제목,제작자 문서정보 쓰면 되는거 
+    웹에는 안보이고 웹 브라우저한테 내용 알리는거임 -->
+    <head>
+
+        <!-- meta태그는 다양한 정보를 쓰는 태그 웹브라우저랑 검색 엔진에 정보 제공 용임 -->
+        <!-- meta 태그는 싱글태그, 속성은 name랑 value로 구성 -->
+        <!-- charset 속성은 문자 인코딩 방식임 표준은 UTF-8 -->
+        <meta charset="UTF-8">
+
+        <!-- name 속성은 메타데이터를 구분하기 위한거  지금 쓰는 viewport는 웹 페이지의 뷰 표트 영역임-->
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+        <!-- link태그는 닫는 태그가 없음 싱글태그임 스타일 시트 파일등 외부 문서 끌어올때 사용 -->
+        <!-- link 안에는 rel은관계 type는 외부 문서 종류 href는 가져 오려는 문서의 외부 경로 , html5부터는 type생략 가넝-->
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/default.css">
+        <title>로그인</title>
+    </head>
+    
+    <!-- body 본문임 웹브라우저 화면에 보임 -->
+    <body>
+
+        <!-- section 문서의 구획 -->
+        <section class="login">
+
+            <!--제목 태그 h1~h6까지 있고 숫자가 작을 수록 주요하고 크기가 큼 -->
+            <h2>로그인</h2>
+
+            <!-- ul 태그는 순서가 없는 목록, 각각의 항목은 li태그를 사용 -->
+            <ul>
+                <!-- input 폼을 사용 할 때 자주쓰는거 text,textarea,radio,checkbox,password,file-->
+                <li><input type="text" placeholder="아이디" title="아이디입력"></li>
+                <li><input type="password" placeholder="비밀번호" title="비밀번호입력"></li>
+                <li><input type="checkbox" id="chk_id"> <label for="chk_id"></label>아이디저장</li>
+                <li><input type="checkbox" id="chk_id"> <label for="chk_id"></label>비밀번호저장</li>
+
+                <!--레이블은 인풋 위제에 대한 이름표 <label>태그사이에서 사용자가 해당 위젯 역할을 식별 할 수 있게 이름사용  -->
+                    <!-- for의 속성은 인풋 위젯과 연결용임 -->
+                <li><button>로그인</button></li>
+            </ul>
+
+        </section>
+
+
+    </body>
+</html>
